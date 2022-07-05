@@ -14,5 +14,6 @@ if (last < 0)
 {
 last = (-last);
 }
+_putchar(last);
 return (last);
 }
