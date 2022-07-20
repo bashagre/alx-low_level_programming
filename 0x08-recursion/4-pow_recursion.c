@@ -7,7 +7,7 @@
  *Return: integer
  */
 
-int_pow_recursion(int x, int y)
+int _pow_recursion(int x, int y)
 {
 	if (y < 0)
 	{
@@ -18,5 +18,8 @@ int_pow_recursion(int x, int y)
 	{
 		return (1);
 	}
-	return (x * int_pow_recursion(x, y - 1));
+	int answer;
+
+	answer = x * int_pow_recursion(x, y - 1);
+	return (answer);
 }
